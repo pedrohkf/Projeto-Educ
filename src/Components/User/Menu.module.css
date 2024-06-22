@@ -1,0 +1,71 @@
+.content{
+    min-height: 100vh;
+    display: flex;
+}
+
+.menulateralContent{
+    background-color: #141415;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 3.5rem;
+    min-width: 16rem;
+    height: 100vh;
+    padding-bottom: 2.5rem;
+}
+
+.menulateral ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.menulateral li{
+    display: flex;
+    font-size: 17px;
+    list-style: none;
+    height: 3rem;
+    padding-left: 3rem;
+    align-items: center;
+}
+
+.svg:hover, .svg::after, .menulateral li:hover, .menulateral li::after{
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+#logoSistema{
+    width: 3.3rem;
+    object-fit: cover;
+}
+
+.svg{
+    width: 1.1rem;
+    margin-right: 2rem;
+    fill: #a9a9be;
+}
+
+#alunos{
+    width: 1.3rem;
+}
+
+#turmas{
+    width: 1.2rem;
+}
+
+#money{
+    width: 1.5rem;
+
+}
+
+hr{
+    margin-left: 1.5rem;
+}
