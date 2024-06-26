@@ -7,17 +7,14 @@
     background-color: #141415;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    row-gap: 3.5rem;
+    justify-content: space-between;
     min-width: 16rem;
     height: 100vh;
-    padding-bottom: 2.5rem;
 }
 
 .menulateral ul{
     display: flex;
     flex-direction: column;
-    row-gap: 2rem;
 }
 
 .menulateral li{
@@ -36,10 +33,10 @@
 .logo{
     display: flex;
     width: 100%;
-    height: 8rem;
+    height: 2rem;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
+    margin-top: 1.5rem;
 }
 
 #logoSistema{

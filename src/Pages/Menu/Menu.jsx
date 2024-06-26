@@ -25,6 +25,7 @@ export const Menu = () => {
               </li>
             </ul>
           </Link>
+          <hr size="3" color="#303030" width="80%" />
           <Link to="/alunos" className="link">
             <ul>
               <li>
@@ -41,6 +42,7 @@ export const Menu = () => {
               </li>
             </ul>
           </Link>
+          <hr size="3" color="#303030" width="80%" />
           <Link to="/pagamentos" className="link">
             <ul>
               <li>
@@ -57,6 +59,7 @@ export const Menu = () => {
               </li>
             </ul>
           </Link>
+          <hr size="3" color="#303030" width="80%" />
           <Link to="/" className="link">
             <ul>
               <li>
