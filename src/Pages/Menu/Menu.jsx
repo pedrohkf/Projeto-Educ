@@ -10,6 +10,7 @@ import SvgDoor from "../../Assets/door.svg?react";
 import Logo from "../../Assets/LogoSistema.png";
 
 export const Menu = () => {
+
   return (
     <div className={styles.content}>
       <div className={styles.menulateral}>
@@ -17,7 +18,7 @@ export const Menu = () => {
           <div className={styles.logo}>
             <img src={Logo} alt="logo" id={styles.logoSistema}/>
           </div>
-          <Link to="/calendario">
+          <Link to="/conta/calendario">
             <ul>
               <li>
                 <SvgCalendar className={styles.svg} />
@@ -26,7 +27,7 @@ export const Menu = () => {
             </ul>
           </Link>
           <hr size="3" color="#303030" width="80%" />
-          <Link to="/alunos" className="link">
+          <Link to="/conta/alunos" className="link">
             <ul>
               <li>
                 <SvgStudent className={styles.svg} id={styles.alunos} />
@@ -34,7 +35,7 @@ export const Menu = () => {
               </li>
             </ul>
           </Link>
-          <Link to="/turmas" className="link">
+          <Link to="/conta/turmas" className="link">
             <ul>
               <li>
                 <SvgPersons className={styles.svg} id={styles.turmas} />
@@ -43,7 +44,7 @@ export const Menu = () => {
             </ul>
           </Link>
           <hr size="3" color="#303030" width="80%" />
-          <Link to="/pagamentos" className="link">
+          <Link to="/conta/pagamentos" className="link">
             <ul>
               <li>
                 <SvgMoney className={styles.svg} id={styles.money} />
@@ -51,7 +52,7 @@ export const Menu = () => {
               </li>
             </ul>
           </Link>
-          <Link to="/financas" className="link">
+          <Link to="/conta/financas" className="link">
             <ul>
               <li>
                 <SvgBank className={styles.svg} />
@@ -60,7 +61,7 @@ export const Menu = () => {
             </ul>
           </Link>
           <hr size="3" color="#303030" width="80%" />
-          <Link to="/" className="link">
+          <Link to="/login" className="link">
             <ul>
               <li>
                 <SvgDoor className={styles.svg} />
