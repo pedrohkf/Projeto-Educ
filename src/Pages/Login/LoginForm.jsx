@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styles from "./Login.module.css";
-import imgForm from "../../Assets/backgroundForm.jpeg";
+import styles from "./LoginForm.module.css";
+import imgForm from "../../Assets/formIMG.jpeg";
 import { Link } from "react-router-dom";
 import Eye from "../../Assets/eye.svg?react";
 import EyeDisable from "../../Assets/eye-disable.svg?react";

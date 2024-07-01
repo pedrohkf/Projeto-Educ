@@ -1,0 +1,123 @@
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: (33, 34, 34, 0.685);
+}
+
+.login {
+    width: 60rem;
+    height: 40rem;
+    border-radius: 35px;
+    display: flex;
+    justify-content: end;
+    border: 3px solid rgba(255, 255, 255, 0.144);
+}
+
+.backgroundImg {
+    position: relative;
+    width: 30rem;
+    height: 100%;
+}
+
+.gradient {
+    width: 30rem;
+    height: 100%;
+    background-image: linear-gradient(-90deg, #131316, #0000007e);
+    position: absolute;
+    border-radius: 35px 0px 0px 35px;
+}
+
+.backgroundImg img {
+    width: 30rem;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 35px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    width: 30rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #131316;
+    border-radius: 0 35px 35px 0;
+}
+
+.formEmail,
+.formPassword {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+input {
+    padding: 1rem;
+}
+
+
+input,
+button {
+    border: 0 none;
+    outline: 0;
+    width: 17rem;
+    height: 2.3rem;
+    border-radius: 20px;
+}
+
+button {
+    background: linear-gradient(#6FCC89, #2F4135);
+    color: white;
+    font-size: 16px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* input:focus,
+input:active 
+.inputPassword:focus{
+    outline: solid 2px #6FCC89;
+} */
+
+.inputPassword {
+    display: flex;
+    background-color: white;
+    width: 17rem;
+    height: 2.3rem;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.eye{
+    display: flex;
+    width: 1.3rem;
+    height: 1rem;
+    margin-right: 1rem;
+}
+
+.resetPassword {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: #A9AAB1;
+    margin-top: 1rem;
+    height: 1rem;
+}
+
+.resetPassword:hover {
+    cursor: pointer;
+}
+
+#resetPassword {
+    text-decoration: underline;
+    font-size: 14px;
+}
