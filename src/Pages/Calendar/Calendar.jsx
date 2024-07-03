@@ -5,7 +5,6 @@ import ArrowLeft from "../../Assets/arrow-left.svg?react";
 import ArrowRight from "../../Assets/arrow-right.svg?react";
 import Add from "../../Assets/add.svg?react";
 
-
 export const Calendar = () => {
   return (
     <>
@@ -19,15 +18,48 @@ export const Calendar = () => {
                 <p>Agendamento</p>
               </div>
               <div className={styles.dots}>
-                <Dots/>
+                <Dots />
               </div>
             </div>
-            <hr />
+            <hr size="3" color="#303030" width="95%" />
             <div className={styles.arrows}>
-                <ArrowLeft />
-                <ArrowRight />
+              <ArrowLeft />
+              <ArrowRight />
             </div>
-            <div className={styles.calendar}></div>
+            <div className={styles.calendar}>
+              {/* <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div>
+              <div>1</div> */}
+            </div>
           </div>
         </section>
       </main>

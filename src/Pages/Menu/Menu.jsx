@@ -12,59 +12,57 @@ import Logo from "../../Assets/LogoSistema.png";
 export const Menu = () => {
   return (
     <div className={styles.content}>
-      <div className={styles.menulateral}>
-        <nav className={styles.menulateralContent}>
-          <div className={styles.logo}>
-            <img src={Logo} alt="logo" id={styles.logoSistema} />
-          </div>
-          <div>
-            <ul>
-              <Link to="/conta/calendario">
-                <li>
-                  <SvgCalendar className={styles.svg} />
-                  Calendário
-                </li>
-              </Link>
+      <nav className={styles.menulateralContent}>
+        <div className={styles.logo}>
+          <img src={Logo} alt="logo" id={styles.logoSistema} />
+        </div>
+        <div>
+          <ul>
+            <Link to="/account/calendar">
+              <li>
+                <SvgCalendar className={styles.svg} />
+                Calendar
+              </li>
+            </Link>
 
-              <hr size="3" color="#303030" width="80%" />
+            <hr size="3" color="#303030" width="80%" />
 
-              <Link to="/conta/alunos">
-                <li>
-                  <SvgStudent className={styles.svg} id={styles.alunos} />
-                  Alunos
-                </li>
-              </Link>
+            <Link to="/account/students">
+              <li>
+                <SvgStudent className={styles.svg} id={styles.alunos} />
+                Students
+              </li>
+            </Link>
 
-              <Link to="/conta/turmas">
-                <li>
-                  <SvgPersons className={styles.svg} id={styles.turmas} />
-                  Turmas
-                </li>
-              </Link>
-              <hr size="3" color="#303030" width="80%" />
-              <Link to="/conta/pagamentos">
-                <li>
-                  <SvgMoney className={styles.svg} id={styles.money} />
-                  Pagamentos
-                </li>
-              </Link>
-              <Link to="/conta/financas">
-                <li>
-                  <SvgBank className={styles.svg} />
-                  Financeira
-                </li>
-              </Link>
-              <hr size="3" color="#303030" width="80%" />
-              <Link to="/">
-                <li>
-                  <SvgDoor className={styles.svg} />
-                  Sair
-                </li>
-              </Link>
-            </ul>
-          </div>
-        </nav>
-      </div>
+            <Link to="/account/class">
+              <li>
+                <SvgPersons className={styles.svg} id={styles.turmas} />
+                Class
+              </li>
+            </Link>
+            <hr size="3" color="#303030" width="80%" />
+            <Link to="/account/payments">
+              <li>
+                <SvgMoney className={styles.svg} id={styles.money} />
+                Payments
+              </li>
+            </Link>
+            <Link to="/account/finance">
+              <li>
+                <SvgBank className={styles.svg} />
+                Finance
+              </li>
+            </Link>
+            <hr size="3" color="#303030" width="80%" />
+            <Link to="/">
+              <li id={styles.logout}>
+                <SvgDoor className={styles.svg} />
+                Logout
+              </li>
+            </Link>
+          </ul>
+        </div>
+      </nav>
     </div>
   );
 };

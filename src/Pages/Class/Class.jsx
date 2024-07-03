@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Turmas = () => {
+export const Class = () => {
   return (
     <div>Turmas</div>
   )

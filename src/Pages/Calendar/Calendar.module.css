@@ -75,3 +75,14 @@ main{
     padding-right: 4rem;
     padding-top: 0.5rem;
 }
+
+.calendar{
+    display: flex;
+}
+
+.calendar div{
+    width: 3rem;
+    height: 3rem;
+    background-color: rgb(104, 103, 103);
+    border: 1px solid black;
+}

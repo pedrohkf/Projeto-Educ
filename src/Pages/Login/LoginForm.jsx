@@ -7,7 +7,7 @@ import EyeDisable from "../../Assets/eye-disable.svg?react";
 
 export const LoginForm = () => {
   const [password, setPassword] = useState("");
-  const [visible, setVisible] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   return (
     <form className={styles.content}>
@@ -46,7 +46,7 @@ export const LoginForm = () => {
               </Link>
             </div>
           </div>
-          <Link to="/conta/calendario">
+          <Link to="/account/calendar">
             <button>Entrar</button>
           </Link>
         </div>
