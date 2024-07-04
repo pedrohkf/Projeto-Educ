@@ -1,22 +1,28 @@
-main{
-    width: 100%;
+main {
+    width: 85%;
 }
 
-.title{
+.title {
+    width: 100%;
     color: white;
     padding: 7rem 0 0 4rem;
     font-size: 20px;
 }
-.description{
+
+.title h1{
+    width: 15rem;
+}
+
+.description {
+    width: 93%;
     display: flex;
     justify-content: end;
     align-items: center;
     column-gap: 2rem;
-    margin-right: 5rem;
     padding-bottom: 1rem;
 }
 
-.button{
+.button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,61 +34,138 @@ main{
     border-radius: 4px;
 }
 
-.button:hover{
+.button:hover {
     cursor: pointer;
 }
 
-.description svg{
+.description svg {
     fill: black;
     width: 1.6rem;
 }
 
-.dots{
+.dots {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.dots:hover{
+.dots:hover {
     cursor: pointer;
 }
 
-.dots svg:hover, .arrows svg:hover{
+.dots svg:hover,
+.arrows svg:hover {
     cursor: pointer;
     fill: #A9AAB1;
     transition: 0.5s;
 }
 
-.dots svg{
+.dots svg {
     fill: white;
     width: 2rem;
 }
 
-.description p{
+.description p {
     margin-left: 1rem;
 }
 
-.arrows svg{
+.arrows svg {
     width: 2.3rem;
     height: 3rem;
     fill: white;
     margin-left: 1rem;
 }
 
-.arrows{
+.arrows {
     display: flex;
+    width: 94%;
     justify-content: end;
-    padding-right: 4rem;
     padding-top: 0.5rem;
 }
 
-.calendar{
+
+.calendar {
     display: flex;
+    height: 42rem;
+    width: 92rem;
+    overflow: scroll;
+    border-radius: 20px;
+    background-color: #2C3038;
+    font-size: 15px;
 }
 
-.calendar div{
+.days {
+    display: flex;
+    width: 110rem;
+    height: 3.5rem;
+    color: #4F5055;
+}
+
+#number{
+    color: white;
+    font-size: 18px;
+}
+
+.days div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    border: solid 1px #4F5055;
+}
+
+.markers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.markers div {
+    display: flex;
+    width: 15rem;
+    height: 10rem;
+    background-color: #24272E;
+    border: 1px solid #4F5055;
+    align-items: end;
+    justify-content: center;
+}
+
+.markers div div{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 1rem;
+    margin-bottom: 0.1rem;
+    width: 14.5rem;
+    height: 5.5rem;
+    background-color: #79350F;
+    border-radius: 15px;
+    border: 2px solid #F49765;
+}
+
+.hours {
+    background-color: #2C3038;
+    height: 53.5rem;
+    padding-top: 3.5rem;
+}
+
+.hours div {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 10rem;
     width: 3rem;
-    height: 3rem;
-    background-color: rgb(104, 103, 103);
-    border: 1px solid black;
+}
+
+.calendar::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #2e2e2e;
+    border-radius: 10px;
+}
+
+.calendar::-webkit-scrollbar-thumb {
+    background-color: #a9aab13a;
+    border-radius: 10px;
 }
