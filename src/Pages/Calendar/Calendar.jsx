@@ -7,7 +7,8 @@ import Add from "../../Assets/add.svg?react";
 import dayjs from "dayjs";
 
 export const Calendar = () => {
-  const [month, setMonth] = useState(dayjs().month()); // Obtém o mês atual
+  const [month, setMonth] = useState(dayjs().month());
+  const [year, setYear] = useState(dayjs().year());
   const [daysInMonth, setDaysInMonth] = useState([]);
 
   const months = [
@@ -26,28 +27,36 @@ export const Calendar = () => {
   ];
 
   useEffect(() => {
-    const currentMonth = dayjs().month(month); // Cria uma instância dayjs para o mês atual
-    const daysInCurrentMonth = currentMonth.daysInMonth(); // Número de dias no mês
-    const startOfMonth = currentMonth.startOf("month").day(); // Dia da semana em que o mês começa
-    const daysArray = Array.from({ length: daysInCurrentMonth }, (_, i) => i + 1);
+    const currentMonth = dayjs(`${year}-${month + 1}`);
+    const daysInCurrentMonth = currentMonth.daysInMonth();
+    const startOfMonth = currentMonth.startOf("month").day();
+    const daysArray = Array.from(
+      { length: daysInCurrentMonth },
+      (_, i) => i + 1
+    );
 
-    // Adiciona dias vazios no início para alinhar o primeiro dia da semana
     for (let i = 0; i < startOfMonth; i++) {
       daysArray.unshift("");
     }
 
     setDaysInMonth(daysArray);
-  }, [month]);
+  }, [month, year]);
 
   const handleNext = () => {
     if (month < months.length - 1) {
       setMonth(month + 1);
+    } else {
+      setMonth(0);
+      setYear(year + 1);
     }
   };
 
   const handlePrevious = () => {
     if (month > 0) {
       setMonth(month - 1);
+    } else {
+      setMonth (11);
+      setYear(year - 1);
     }
   };
 
@@ -68,12 +77,15 @@ export const Calendar = () => {
           <hr size="3" color="#303030" width="95%" />
           <div className={styles.arrows}>
             <ArrowLeft onClick={handlePrevious} disabled={month === 0} />
-            <ArrowRight onClick={handleNext} disabled={month === months.length - 1} />
+            <ArrowRight
+              onClick={handleNext}
+              disabled={month === months.length - 1}
+            />
           </div>
           <div className={styles.calendar}>
             <div className={styles.containerDays}>
               <div className={styles.month}>
-                <h2>{months[month].name}</h2>
+                <h2>{months[month].name} {year}</h2>
                 <div className={styles.daysOfWeek}>
                   <div>Dom</div>
                   <div>Seg</div>

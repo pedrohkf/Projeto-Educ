@@ -114,6 +114,15 @@ main {
     
 }
 
+.month h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    background-color: #24272E;
+}
+
 .monthContent {
     display: flex;
     flex-wrap: wrap;
@@ -131,8 +140,9 @@ main {
 
 .daysOfWeek{
     display: flex;
-    background-color: #A9AAB1;
+    background-color: #2C3038;
     width: 100%;
+    height: 2.5rem;
     justify-content: start;
     text-align: center;
 }
